@@ -1,0 +1,31 @@
+{
+  "rewrites": [
+    { "source": "/e/:proxyPath*", "destination": "/api/embed-proxy?proxyMode=embed" },
+    { "source": "/ep/:proxyPath*", "destination": "/api/embed-proxy?proxyMode=root" },
+    { "source": "/fetch", "destination": "/api/embed-proxy?proxyMode=root&proxyPath=fetch" },
+    { "source": "/ad.html", "destination": "/api/embed-proxy?proxyMode=local&proxyPath=ad.html" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+# PirateOne
+
+> PirateOne is a free streaming hub for movies, TV series, anime, and live sports with watchlists and continue-watching across devices.
+
+## Pages
+
+- [Home](/): Trending movies, TV, and anime with continue-watching.
+- [Movies](/movies): Browse and discover movies.
+- [Series](/series): Browse TV series.
+- [Anime](/anime): Anime catalogue.
+- [Sports](/sports): Live sports streaming via Strike.
+- [Search](/search): Search across movies, TV, and anime.
+- [Watchlist](/watchlist): Your saved titles and collections.
+- [Help](/help): Usage tips and troubleshooting.

@@ -1,0 +1,15 @@
+{
+  "name": "PirateOne",
+  "short_name": "PirateOne",
+  "description": "Free streaming for movies, TV shows, anime, and live sports.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0f1a",
+  "theme_color": "#0f3460",
+  "categories": ["entertainment", "video", "movies"],
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
